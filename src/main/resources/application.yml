@@ -15,6 +15,9 @@ local:
 spring:
   application:
     name: service-exchange-rate
+  redis:
+    host: redis
+    port: 6379
   config:
     import: optional:configserver:http://ms-config-server:8888
 eureka:
